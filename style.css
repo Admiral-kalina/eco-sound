@@ -1,0 +1,92 @@
+body{
+max-height: 100vh;
+}
+.header{
+    height: 80px;
+    background-color: #000;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-item:hover{
+    color: rgb(235, 207, 53);
+}
+.nav-item_active{
+    color: rgb(235, 207, 53);
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+.logo{
+    background-image: url("./assets/1.png");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+}
+.logo:hover{
+    background-image: url("./assets/2.png") 
+}
+
+.main{
+    background-image: url('./assets/main/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 160px);
+    position: relative;
+}
+.main-btn{
+    cursor: pointer;
+    background: url('./assets/main/play.png');
+    height: 140px;
+    width: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-btn_pause{
+    background: url('./assets/main/pause.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main-btn:hover{
+    height: 110px;
+    width: 110px;
+}
+
+.footer{
+    height: 80px;
+    background-color: #000;
+}
+.footer-data{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.footer-data p{
+    margin-right: 15px;
+}
